@@ -58,6 +58,7 @@ class High extends School {
     this._sportsTeams = sportsTeams;
   }
   get sportsTeams(){
+    console.log(this._sportsTeams);
     return this._sportsTeams;
   }
 
