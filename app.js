@@ -21,6 +21,9 @@ class School {
       console.log('Invalid input: numberOfStudents must be set to a Number.')
     }
   }
+  quickFacts(){
+    console.log(`${this.name} educates ${this.numberOfStudents} students at the ${this.level} school level.`);
+  }
 
 }
 
