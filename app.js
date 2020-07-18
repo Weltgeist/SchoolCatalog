@@ -19,3 +19,36 @@ class School {
   }
 
 }
+
+class Primary extends School {
+  
+  constructor(name, level, numberOfStudents, pickupPolicy) {
+    super(name);
+    super(level);
+    super(numberOfStudents);
+    this._pickupPolicy = pickupPolicy;
+  }
+
+}
+
+
+class Middle extends School {
+  
+  constructor(name, level, numberOfStudents) {
+    super(name);
+    super(level);
+    super(numberOfStudents);
+  }
+
+}
+
+class High extends School {
+  
+  constructor(name, level, numberOfStudents, sportsTeams) {
+    super(name);
+    super(level);
+    super(numberOfStudents);
+    this._sportsTeams = sportsTeams;
+  }
+
+}
