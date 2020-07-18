@@ -28,6 +28,9 @@ class Primary extends School {
     super(numberOfStudents);
     this._pickupPolicy = pickupPolicy;
   }
+  get pickupPolicy(){
+    return this._pickupPolicy;
+  }
 
 }
 
@@ -49,6 +52,9 @@ class High extends School {
     super(level);
     super(numberOfStudents);
     this._sportsTeams = sportsTeams;
+  }
+  get sportsTeams(){
+    return this._sportsTeams;
   }
 
 }
