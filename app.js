@@ -21,22 +21,22 @@ class School {
       console.log('Invalid input: numberOfStudents must be set to a Number.')
     }
   }
-  quickFacts(){
+  quickFacts() {
     console.log(`${this.name} educates ${this.numberOfStudents} students at the ${this.level} school level.`);
   }
-  static pickSubstituteTeacher(substituteTeachers){
-    return substituteTeachers[Math.floor(Math.random()*substituteTeachers.length)];
+  static pickSubstituteTeacher(substituteTeachers) {
+    return substituteTeachers[Math.floor(Math.random() * substituteTeachers.length)];
   }
 
 }
 
 class Primary extends School {
-  
+
   constructor(name, numberOfStudents, pickupPolicy) {
     super(name, 'primary', numberOfStudents);
     this._pickupPolicy = pickupPolicy;
   }
-  get pickupPolicy(){
+  get pickupPolicy() {
     return this._pickupPolicy;
   }
 
@@ -44,7 +44,7 @@ class Primary extends School {
 
 
 class Middle extends School {
-  
+
   constructor(name, numberOfStudents) {
     super(name, 'middle', numberOfStudents);
   }
@@ -52,12 +52,12 @@ class Middle extends School {
 }
 
 class High extends School {
-  
+
   constructor(name, numberOfStudents, sportsTeams) {
     super(name, 'high', numberOfStudents);
     this._sportsTeams = sportsTeams;
   }
-  get sportsTeams(){
+  get sportsTeams() {
     console.log(this._sportsTeams);
     return this._sportsTeams;
   }
